@@ -162,69 +162,6 @@ a {
   margin-bottom: 20px;
 }
 
-.css-spinner,
-.waapi-spinner,
-.gsap-spinner {
-  position: relative;
-  height: 30vh;
-  font-size: 65px;
-}
-
-.css-spinner__spinner,
-.waapi-spinner__spinner,
-.gsap-spinner__spinner {
-  position: absolute;
-  /* amination goes here */
-  /* amination-name */
-  /* amination-duration */
-  /* amination-timing-function */
-  /* amination-delay */
-  /* amination-iteration-count */
-  /* amination-direction */
-  /* amination-fill-mode */
-  /* animation: spinIt 2s infinite ease; */
-}
-
-.css-spinner__spinner {
-  animation: spinIt 2s infinite ease;
-}
-
-.css-spinner {
-  background: skyblue;
-}
-
-.waapi-spinner {
-  background: rgb(239, 159, 159);
-}
-
-.gsap-spinner {
-  background: rgb(159, 239, 159);
-}
-
-.spin {
-  left: 25%;
-  top: 25%;
-}
-
-.moreSpin {
-  left: 50%;
-  top: 40%;
-}
-
-.mostSpin {
-  left: 75%;
-  top: 35%;
-}
-
-@keyframes spinIt {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /* ==========================================================================
    Helper classes
