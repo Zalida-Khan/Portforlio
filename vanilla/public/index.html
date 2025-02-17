@@ -18,7 +18,7 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
-  
+
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
 
@@ -45,7 +45,7 @@
     }
 
     .logo__image {
-      width: 12%;
+      width: 10%;
       padding-left: 20px;
       padding-top: 10px;
       height: auto;
@@ -163,7 +163,7 @@
       }
 
       .logo__image {
-        width: 15%;
+        width: 10%;
         height: auto;
         display: flex;
         justify-content: center;
@@ -302,9 +302,26 @@
   <footer class="footer-container">
     © 2025 Zalida Khan
   </footer>
+  <script>
+    let $targetElement = document.querySelectorAll('.targert-element')
+console.log($targetElement);
+
+let $formattedTargetElement = Array.from($targetElement);
+$formattedTargetElement.forEach((element) => {
+    debugger;
+    return element.append("hello");
+});
+
+const hamburger = document.getElementById("hamburger");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-  <script src="js/script.js">
-  </script>
+  <script src="js/script.js"> </script>
 
 
 </body>
