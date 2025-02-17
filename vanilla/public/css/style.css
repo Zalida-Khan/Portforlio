@@ -13,6 +13,7 @@
 
 html {
   color: #222;
+  cursor: url("../img/kirb.png") 30 0, auto;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -123,6 +124,7 @@ a {
   margin: 0;
   flex-direction: column;
   padding: 20px;
+  padding-top: 20%;
 
 }
 
@@ -162,6 +164,127 @@ a {
   margin-bottom: 20px;
 }
 
+
+
+.css-spinner,
+.waapi-spinner,
+.gsap-spinner {
+  position: relative;
+  height: 30vh;
+  font-size: 65px;
+}
+
+.css-spinner__spinner,
+.waapi-spinner__spinner,
+.gsap-spinner__spinner {
+  position: absolute;
+  /* amination goes here */
+  /* amination-name */
+  /* amination-duration */
+  /* amination-timing-function */
+  /* amination-delay */
+  /* amination-iteration-count */
+  /* amination-direction */
+  /* amination-fill-mode */
+  /* animation: spinIt 2s infinite ease; */
+}
+
+.css-spinner__spinner {
+  animation: spinIt 2s infinite ease;
+}
+
+.css-spinner {
+  background: skyblue;
+}
+
+.waapi-spinner {
+  background: rgb(239, 159, 159);
+}
+
+.gsap-spinner {
+  background: rgb(159, 239, 159);
+}
+
+.spin {
+  left: 25%;
+  top: 25%;
+}
+
+.moreSpin {
+  left: 50%;
+  top: 40%;
+}
+
+.mostSpin {
+  left: 75%;
+  top: 35%;
+}
+
+@keyframes spinIt {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+img-comparison-slider {
+  width: 100%;
+  max-width: 1000px;
+  /* Set a reasonable max width */
+  height: auto;
+  /* Ensures proper scaling */
+  display: block;
+  /* Removes extra spacing */
+  margin: 0 auto;
+  /* Centers the slider */
+  border: pink;
+}
+
+img-comparison-slider img {
+  width: 100%;
+  /* Makes sure images inside scale properly */
+  height: auto;
+  /* Keeps aspect ratio */
+}
+
+.comparison-slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust based on slider width */
+}
+
+.comparison-labels {
+  position: absolute;
+  bottom: 10px; /* Moves labels inside at the bottom */
+  left: 50%;
+
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: black; /* Adjust for better visibility */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.label {
+  flex: 1;
+}
+
+.first {
+  text-align: left;
+}
+
+.second {
+  text-align: right;
+}
 
 /* ==========================================================================
    Helper classes

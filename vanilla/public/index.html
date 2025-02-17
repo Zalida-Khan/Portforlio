@@ -41,10 +41,11 @@
       justify-content: space-around;
       align-items: center;
       position: fixed;
+      z-index: 1000;
     }
 
     .logo__image {
-      width: 10%;
+      width: 12%;
       padding-left: 20px;
       padding-top: 10px;
       height: auto;
@@ -58,7 +59,7 @@
       list-style: none;
       display: flex;
       margin: 0;
-      /* padding: 0; */
+      padding: 20px;
       align-items: flex-start;
       /* justify-content: center; */
     }
@@ -66,7 +67,7 @@
     nav ul li {
       margin: 0 10px;
       font-size: 1.2rem;
-      font-weight: 600;
+      font-weight: 400;
       color: rgb(25, 25, 139);
       margin-left: 20px;
     }
@@ -109,6 +110,7 @@
       flex-direction: column;
       justify-content: space-between;
       width: 60px;
+      z-index: 1000;
       height: 25px;
     }
 
@@ -216,6 +218,13 @@
     nav ul li:nth-child(5) {
       animation-delay: 1s;
     }
+
+    html {
+      color: #222;
+      cursor: url("img/kirb.png") 30 0, auto;
+      font-size: 1em;
+      line-height: 1.4;
+    }
   </style>
 </head>
 
@@ -241,6 +250,23 @@
     </nav>
   </header>
 
+  <div class="css-spinner">
+    <span class="css-spinner__spinner spin">🙄</span>
+    <span class="css-spinner__spinner moreSpin">😶‍🌫️</span>
+    <span class="css-spinner__spinner mostSpin">🫨</span>
+  </div>
+
+  <div class="waapi-spinner">
+    <span class="waapi-spinner__spinner spin">😹</span>
+    <span class="waapi-spinner__spinner moreSpin">😼</span>
+    <span class="waapi-spinner__spinner mostSpin">🙀</span>
+  </div>
+
+  <div class="gsap-spinner">
+    <span class="gsap-spinner__spinner spin">🐦</span>
+    <span class="gsap-spinner__spinner moreSpin">🐧</span>
+    <span class="gsap-spinner__spinner mostSpin">🐔</span>
+  </div>
 
   <main class="u-flex">
     <article class="entry">
@@ -256,8 +282,8 @@
       </a>
     </article>
     <article class="entry">
-      <a href="projects.html">
-        <img class="c-entry__image" src="img/super-cool.jpg" alt="Projects">
+      <a href="super-cool.html">
+        <img class="c-entry__image" src="img/Original-Camera.jpg" alt="Projects">
         <h2 class="c-entry__title">super cool</h2>
       </a>
     </article>
