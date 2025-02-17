@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  cursor: url("../img/kirb.png") 30 0, auto;
+  cursor: url("../img/kirb.png") 5 5, auto;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -155,6 +155,55 @@ a {
   }
 }
 
+.posts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.post_heading {
+  padding: 20px;
+  font-size: 3rem; 
+  text-align: center;
+  color: rgb(26, 26, 113);
+  padding-top: 150px;
+  margin: 20px 0;
+ }
+
+.post {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.post:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post__image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.post__title {
+  font-size: 1.5rem;
+  color: rgb(26, 26, 113);
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .posts-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 .footer-container {
   display: flex;
   justify-content: center;
@@ -233,32 +282,26 @@ a {
 img-comparison-slider {
   width: 100%;
   max-width: 1000px;
-  /* Set a reasonable max width */
   height: auto;
-  /* Ensures proper scaling */
   display: block;
-  /* Removes extra spacing */
   margin: 0 auto;
-  /* Centers the slider */
   border: pink;
 }
 
 img-comparison-slider img {
   width: 100%;
-  /* Makes sure images inside scale properly */
   height: auto;
-  /* Keeps aspect ratio */
 }
 
 .comparison-slider {
   position: relative;
   width: 100%;
-  max-width: 600px; /* Adjust based on slider width */
+  max-width: 600px; 
 }
 
 .comparison-labels {
   position: absolute;
-  bottom: 10px; /* Moves labels inside at the bottom */
+  bottom: 10px; 
   left: 50%;
 
   transform: translateX(-50%);
@@ -268,8 +311,8 @@ img-comparison-slider img {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  color: black; /* Adjust for better visibility */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: black; 
+  background: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 5px;
 }
@@ -308,9 +351,6 @@ img-comparison-slider img {
 
 }
 
-/*
- * Hide visually and from screen readers
- */
 
 .hidden,
 [hidden] {
@@ -336,7 +376,6 @@ img-comparison-slider img {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
 }
 
 /*
