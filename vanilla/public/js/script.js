@@ -1,12 +1,3 @@
-let $targetElement = document.querySelectorAll('.targert-element')
-console.log($targetElement);
-
-let $formattedTargetElement = Array.from($targetElement);
-$formattedTargetElement.forEach((element) => {
-    debugger;
-    return element.append("hello");
-});
-
 const hamburger = document.getElementById("hamburger");
 const nav = document.querySelector("nav");
 
