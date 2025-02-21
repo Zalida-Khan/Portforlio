@@ -13,9 +13,10 @@
 
 html {
   color: #222;
-  cursor: url("../img/kirb.png") 5 5, auto;
+  /* cursor: url("../img/kirb.png") 5 5, auto; */
   font-size: 1em;
   line-height: 1.4;
+  scrollbar-color: rgb(143, 200, 143) rgb(26, 26, 113);
 }
 
 /*
@@ -159,8 +160,8 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding-left: 20px;  
-  padding-right: 20px;  
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .post_heading {
@@ -200,12 +201,12 @@ a {
 @media (min-width: 768px) and (max-width: 1024px) {
   .posts-container {
     grid-template-columns: 1fr 1fr;
-    padding-left: 40px; 
+    padding-left: 40px;
     padding-right: 40px;
   }
 
   .post_heading {
-    font-size: 2.8rem; 
+    font-size: 2.8rem;
     padding-top: 130px;
   }
 
@@ -217,24 +218,24 @@ a {
 @media (min-width: 1024px) {
   .posts-container {
     grid-template-columns: 1fr 1fr;
-    padding-left: 300px; 
+    padding-left: 300px;
     padding-right: 300px;
   }
 }
 
 @media (max-width: 768px) {
   .posts-container {
-    padding-left: 20px; 
+    padding-left: 20px;
     padding-right: 20px;
   }
 
   .post_heading {
-    font-size: 2.5rem; 
-    padding-top: 100px; 
+    font-size: 2.5rem;
+    padding-top: 100px;
   }
 
   .post__title {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 }
 
@@ -331,19 +332,19 @@ img-comparison-slider {
 img-comparison-slider img {
   width: 100%;
   height: auto;
-  
+
 }
 
 .comparison-slider {
   position: relative;
   width: 100%;
-  max-width: 600px; 
+  max-width: 600px;
   border: pink;
 }
 
 .comparison-labels {
   position: absolute;
-  bottom: 10px; 
+  bottom: 10px;
   left: 50%;
 
   transform: translateX(-50%);
@@ -353,7 +354,7 @@ img-comparison-slider img {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  color: black; 
+  color: black;
   background: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 5px;
@@ -370,6 +371,29 @@ img-comparison-slider img {
 
 .second {
   text-align: right;
+}
+
+.input-demo {
+  field-sizing: fixed;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.button {
+  color: white;
+  background: #AAAC24;
+  border: #AAAC24;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.header:has(:checked) {
+  background-color: rgb(170, 172, 36, 0.2);
+}
+
+.button:hover {
+  background-color: #1A428A;
+  transform: scale(1);
 }
 
 /* ==========================================================================
